@@ -115,8 +115,6 @@ def clean(path):
         'phase': 'phase'
     }
     data_clean = data_clean.rename(columns=english_column_mapping)
-    if save_to_csv:
-        data_clean.to_csv("./data/data_clean.csv")
     return data_clean
 
 def fill_missing_with_grouped_mean(df, group_id_cols: list, mean_value_cols: list):
