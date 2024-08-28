@@ -125,7 +125,7 @@ def fill_missing_with_grouped_mean(df, group_id_cols: list, mean_value_cols: lis
         df[mean_value_col] = df[mean_value_col].fillna(mean_values)
     return df
 
-def seperate_attention_score_variables(clean_data):
+def separate_attention_score_variables(clean_data):
     """Takes the cleaned dataframe from clean() and redefines the attention
     variables to have seperate columns for both attention types.
     Fills out missing values in certain mean_value_cols by their group mean,
